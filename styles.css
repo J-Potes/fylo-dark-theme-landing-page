@@ -149,47 +149,9 @@ p {
     display: flex;
     justify-content: center;
     position: relative;
-    background-color: var(--introEmailBg);
+    background-color: var(--mainBg);
     z-index: -2;
 }
-
-@media (max-width: 760px) {
-    .main__container {
-        background: linear-gradient(
-        to bottom,
-        var(--introEmailBg) 0%,
-        var(--introEmailBg) 52%,
-        var(--mainBg) 52%,
-        var(--mainBg) 100%
-        );
-    }
-}
-
-@media (max-width: 550px) {
-    .main__container {
-        background: linear-gradient(
-        to bottom,
-        var(--introEmailBg) 0%,
-        var(--introEmailBg) 50%,
-        var(--mainBg) 50%,
-        var(--mainBg) 100%
-        );
-    }
-}
-
-@media (max-width: 420px) {
-    .main__container {
-        background: linear-gradient(
-        to bottom,
-        var(--introEmailBg) 0%,
-        var(--introEmailBg) 48%,
-        var(--mainBg) 48%,
-        var(--mainBg) 100%
-        );
-    }
-}
-
-
 
 .main_bgImage {
     position: absolute;
@@ -197,6 +159,7 @@ p {
     height: 100%;
     top: 0;
     left: 0;
+    background-color: var(--introEmailBg);
     background-image: url(images/bg-curvy-desktop.svg);
     background-size:contain;
     background-repeat: no-repeat;
@@ -207,10 +170,9 @@ p {
 
 @media (max-width: 760px) {
     .main_bgImage {
-        background-position-y: 40%;
+        height: 49%;
     }
 }
-
 
 .main {
     max-width: 70rem;
