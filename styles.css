@@ -146,21 +146,71 @@ p {
 
 .main__container {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
     background-color: var(--introEmailBg);
+    z-index: -2;
+}
+
+@media (max-width: 760px) {
+    .main__container {
+        background: linear-gradient(
+        to bottom,
+        var(--introEmailBg) 0%,
+        var(--introEmailBg) 52%,
+        var(--mainBg) 52%,
+        var(--mainBg) 100%
+        );
+    }
+}
+
+@media (max-width: 550px) {
+    .main__container {
+        background: linear-gradient(
+        to bottom,
+        var(--introEmailBg) 0%,
+        var(--introEmailBg) 50%,
+        var(--mainBg) 50%,
+        var(--mainBg) 100%
+        );
+    }
+}
+
+@media (max-width: 420px) {
+    .main__container {
+        background: linear-gradient(
+        to bottom,
+        var(--introEmailBg) 0%,
+        var(--introEmailBg) 48%,
+        var(--mainBg) 48%,
+        var(--mainBg) 100%
+        );
+    }
+}
+
+
+
+.main_bgImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     background-image: url(images/bg-curvy-desktop.svg);
     background-size:contain;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    display: flex;
-    justify-content: center;
+    z-index: -1;
 }
 
 @media (max-width: 760px) {
-    .main__container {
-        /* background-position-y: center; */
+    .main_bgImage {
+        background-position-y: 40%;
     }
 }
+
 
 .main {
     max-width: 70rem;
