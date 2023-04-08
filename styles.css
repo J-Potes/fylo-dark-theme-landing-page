@@ -304,21 +304,54 @@ p {
 /** howItWorks **/
 
 .howItWorks {
+    background-color: var(--mainBg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.howItWorks__container {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 110rem;
+    gap: 5rem;
+    align-items: center;
+}
+
+@media (max-width: 760px) {
+    .howItWorks__container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 }
 
 .howItWorks__img {
     width: 100%;
 }
 
-@media (max-width: 760px) {
-    .howItWorks {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
+.howItWorks__content {
+
 }
+
+.content--title {
+
+}
+
+.content--text {
+
+}
+
+.content--link {
+    display: flex;
+    align-items: center;
+
+}
+
+#b:hover {
+    /* fill: red !important; */
+}
+
 
 
 /** Comments **/
