@@ -379,7 +379,21 @@ p {
 /** Comments **/
 
 .comments {
+    position: relative;
+}
 
+.comments__bgimg {
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    z-index: -1;
+}
+
+@media (max-width: 760px) {
+    .comments__bgimg {
+        left: 4rem;
+        width: 3rem;
+    }
 }
 
 .cards__container {
@@ -387,11 +401,13 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
     max-width: 110rem;
+    padding: 3.5rem 1rem !important;
 }
 
 @media (max-width: 760px) {
     .cards__container { 
         grid-template-columns: 1fr;
+        padding: 2.2rem 1rem !important; 
     }
 }
 
@@ -405,6 +421,13 @@ p {
     font-size: 1.35rem;
     letter-spacing: 0.05rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 760px) {
+    .card__text {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
 }
 
 .card__author {
