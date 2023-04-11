@@ -34,7 +34,7 @@ body {
     font-family: var(--mainFont);
     font-size: 1.4rem;
     height: 100%;
-    background-color: rgb(83, 83, 83);
+    background-color: var(--mainBg);
     color: var(--White);
     justify-content: center;
     align-items: center;
@@ -378,9 +378,15 @@ p {
 
 /** Comments **/
 
+.comments {
+
+}
+
 .cards__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    max-width: 110rem;
 }
 
 @media (max-width: 760px) {
@@ -389,6 +395,44 @@ p {
     }
 }
 
+.comments__card {
+    background-color: var(--testimonialsBg);
+    padding: 2.5rem;
+    border-radius: 0.3rem;
+}
+
+.card__text {
+    font-size: 1.35rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2rem;
+}
+
+.card__author {
+    display: grid;
+    width: 17rem;
+    grid-template-areas: 
+        "img name name name name"
+        "img role role role role";
+}
+
+.card__author--image {
+    grid-area: img;
+    border-radius: 50%;
+    height: 2.5rem;
+}
+
+.card__author--name {
+    grid-area: name;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    font-size: 1.05rem;
+}
+
+.card__author--role {
+    grid-area: role;
+    margin: 0;
+    font-size: 0.90rem;
+}
 
 /** End Part **/
 
