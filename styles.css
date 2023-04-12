@@ -460,11 +460,59 @@ p {
 /** End Part **/
 
 .end {
+    position: relative;
+    padding-top: 20rem;
+    width: 100%;
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--introEmailBg);
+    border-radius: 0.7rem;
+    width: 100%;
+    max-width: 75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    z-index: 2;
+}
+
+.form__title {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.form__text {
+    font-size: 1.25rem;
+    width: 80%;
+    text-align: center;
+}
+
+.form__email {
+    display: flex;
+}
+
+@media (max-width: 760px) {
+    .form__email {
+        flex-direction: column;
+    }
+}
+
+.form__email--input {
+    
+}
+
+.form__email--submit {
 
 }
 
 .footer {
-
+    background-color: var(--footerBg);
 }
 
 .footer__content {
