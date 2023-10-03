@@ -486,6 +486,7 @@ p {
     align-items: center;
     padding: 3rem;
     z-index: 2;
+    margin-top: 6rem;
 }
 
 @media (max-width: 760px) {
@@ -521,6 +522,8 @@ p {
 
 .form__email {
     display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
 }
 
 @media (max-width: 760px) {
@@ -535,11 +538,32 @@ p {
     height: 4.5rem;
     width: 45rem;
     border-radius: 5rem;
+    padding-left: 3rem;
+}
+
+.form__email--input::placeholder {
+    opacity: 0.5;
 }
 
 @media (max-width: 760px) {
     .form__email--input {
         width: 100%;
+    }
+}
+
+.error-message {
+    position: absolute;
+    color: var(--redError);
+    font-size: 1rem;
+    bottom: 1.5rem;
+    left: 9rem;
+    visibility: hidden;
+}
+
+@media (max-width: 760px) {
+    .error-message {
+        bottom: 7.3rem;
+        left: 9rem;
     }
 }
 
@@ -551,6 +575,29 @@ p {
     font-weight: bold;
     color: var(--White);
     border-radius: 5rem;
+}
+
+@media (max-width: 760px) {
+    .form__email--submit {
+        width: 100%;
+        height: 4.5rem;
+    }
+}
+
+.form__email--submit:hover {
+    background-image: none;
+    background-color: var(--hoverCyan);
+    cursor: pointer;
+}
+
+.form__email--submit:active {
+    background-image: none;
+    background-color: var(--cyanGrad1);
+    cursor: pointer;
+}
+
+form.submitted .form__email--input:invalid + .error-message{
+    visibility: visible;
 }
 
 .footer {

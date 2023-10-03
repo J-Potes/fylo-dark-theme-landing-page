@@ -166,7 +166,8 @@
                 questions, our support team would be happy to help you.
             </p>
             <form action="" class="form__email">
-                <input type="text" name="" id="" class="form__email--input">
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form__email--input" placeholder="email@example.com">
+                <p class="error-message">Please enter a valid email address</p>
                 <input type="submit" value="Get Started For Free" class="form__email--submit">
             </form>
         </div>
@@ -221,5 +222,6 @@
             </p>        
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
