@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-with-html-and-css-j4k15oM2F6](https://www.frontendmentor.io/solutions/responsive-landing-page-with-html-and-css-j4k15oM2F6)
 - Live Site URL: [https://fylo-dark-theme-landing-page-exercise.netlify.app/](https://fylo-dark-theme-landing-page-exercise.netlify.app/)
 
 ## My process
