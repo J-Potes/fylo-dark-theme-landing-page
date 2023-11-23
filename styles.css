@@ -41,11 +41,11 @@ body {
     margin: 0;
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
     body {
-        /* padding: 2rem; */
+        padding: 2rem;
     }
-}
+} */
 
 p {
     font-family: var(--pFont);
@@ -465,11 +465,11 @@ p {
     width: 100%;
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
     .end {
-        /* width: 90%; */
+        width: 90%;
     }
-}
+} */
 
 .form {
     position: absolute;
@@ -629,9 +629,9 @@ form.submitted .form__email--input:invalid + .error-message{
     justify-content: start;
 }
 
-.footer__logo--img{
+/* .footer__logo--img{
 
-}
+} */
 
 .footer__content {
     display: flex;
