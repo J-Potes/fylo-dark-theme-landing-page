@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![Screenshot 2023-11-23 at 18-35-54 Fylo landing page](https://github.com/J-Potes/fylo-dark-theme-landing-page/assets/119544731/135ec4b2-c3fe-412e-a58d-2fc4762b8120)
 
 ### Links
 
